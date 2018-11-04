@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="fitXY"
+        android:layout_alignBottom="@+id/scrollView"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/backheadings"
+        android:src="@drawable/car1" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_weight="50"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/backheadings"
+                android:paddingStart="30dp"
+                android:text="PICK UP"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/LLpickup_loc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/backheadings"
+                    android:paddingStart="5dp"
+                    android:layout_marginRight="10dp"
+
+                    android:text="Location"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/pickup_loc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+
+                    android:text="Location"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:id="@+id/LLpickup_Date"
+                android:weightSum="100">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/backheadings"
+                    android:paddingStart="5dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Date"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:text="Date"
+                    android:id="@+id/pickup_date"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:id="@+id/LLpickup_Time"
+                android:weightSum="100">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/backheadings"
+                    android:paddingStart="5dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Time"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:id="@+id/pickup_time"
+                    android:text="Time"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/backheadings"
+                android:paddingStart="30dp"
+                android:layout_marginTop="10dp"
+                android:text="DROP OFF"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:id="@+id/LLDropOffLocation"
+                android:weightSum="100">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/backheadings"
+                    android:paddingStart="5dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Location"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:text="Location"
+                    android:id="@+id/dropOffLoc"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/LLDropOffDate"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:text="Date"
+
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/backheadings"
+                    android:paddingStart="5dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:text="Date"
+                    android:id="@+id/dropOffDate"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:id="@+id/LLDropOffTime"
+                android:weightSum="100">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/backheadings"
+                    android:paddingStart="5dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Time"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Time"
+                    android:id="@+id/dropOffTime"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/continueBtn"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/backheadings"
+                android:text="Continue"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

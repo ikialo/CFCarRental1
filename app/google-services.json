@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "91331763084",
+    "firebase_url": "https://cfcarrental-61f47.firebaseio.com",
+    "project_id": "cfcarrental-61f47",
+    "storage_bucket": "cfcarrental-61f47.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:91331763084:android:13378603c280157e",
+        "android_client_info": {
+          "package_name": "com.example.isaac.cfcarrental"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "91331763084-du56225l7h09id8dk55ne3v9spph8fkf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.isaac.cfcarrental",
+            "certificate_hash": "27926793033846217192b06adfdba68dfa0c8c57"
+          }
+        },
+        {
+          "client_id": "91331763084-ljh40qnl198ct7ftp56m3p8np4mqbfea.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAtAg9KCTWLsXJ_YRoSdFHgK7wepfaTmc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "91331763084-ljh40qnl198ct7ftp56m3p8np4mqbfea.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
