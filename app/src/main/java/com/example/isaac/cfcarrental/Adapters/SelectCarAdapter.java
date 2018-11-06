@@ -17,6 +17,9 @@ public class SelectCarAdapter extends RecyclerView.Adapter<SelectCarAdapter.Sele
 
     private Context mContext;
     private List<SelectCarHolder> mList;
+    private OnItemClickListener mListener;
+
+
 
     public SelectCarAdapter(Context mContext, List<SelectCarHolder> mList) {
         this.mContext = mContext;
@@ -33,13 +36,13 @@ public class SelectCarAdapter extends RecyclerView.Adapter<SelectCarAdapter.Sele
     @Override
     public void onBindViewHolder(@NonNull SelectCarViewHolder selectCarViewHolder, int i) {
 
-        selectCarViewHolder.fuelType.setText(mList.get(i).getFuelType().toString());
-        selectCarViewHolder.carSeat.setText(mList.get(i).getCarSeat().toString());
-        selectCarViewHolder.model.setText(mList.get(i).getModel().toString());
-        selectCarViewHolder.manufacture.setText(mList.get(i).getManufacture().toString());
-        selectCarViewHolder.plateNumber.setText(mList.get(i).getPlateNumber().toString());
-        selectCarViewHolder.price.setText(mList.get(i).getPrice().toString());
-        selectCarViewHolder.milage.setText(mList.get(i).getMilage().toString());
+        selectCarViewHolder.fuelType.setText(mList.get(i).getFuelType());
+        selectCarViewHolder.carSeat.setText(mList.get(i).getCarSeat());
+        selectCarViewHolder.model.setText(mList.get(i).getModel());
+        selectCarViewHolder.manufacture.setText(mList.get(i).getManufacture());
+        selectCarViewHolder.plateNumber.setText(mList.get(i).getPlateNumber());
+        selectCarViewHolder.price.setText(mList.get(i).getPrice());
+        selectCarViewHolder.milage.setText(mList.get(i).getMilage());
 
     }
 
@@ -48,7 +51,7 @@ public class SelectCarAdapter extends RecyclerView.Adapter<SelectCarAdapter.Sele
         return mList.size();
     }
 
-    public class SelectCarViewHolder extends RecyclerView.ViewHolder{
+    public class SelectCarViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         TextView plateNumber, price, milage, manufacture, model, carSeat, fuelType;
 
@@ -62,6 +65,29 @@ public class SelectCarAdapter extends RecyclerView.Adapter<SelectCarAdapter.Sele
             model = itemView.findViewById(R.id.model);
             carSeat = itemView.findViewById(R.id.carSeat);
             fuelType = itemView.findViewById(R.id.fuelType);
+
+            itemView.setOnClickListener(this);
         }
+
+        @Override
+        public void onClick(View v) {
+            if (mListener != null){
+                int position = getAdapterPosition();
+
+                if (position != RecyclerView.NO_POSITION){
+                    mListener.onItemClick(position);
+                }
+            }
+        }
+
+    }
+    public interface OnItemClickListener{
+        void onItemClick (int position);
+
+
+    }
+
+    public void setOnItemClickListener(OnItemClickListener listener){
+        mListener = listener;
     }
 }
