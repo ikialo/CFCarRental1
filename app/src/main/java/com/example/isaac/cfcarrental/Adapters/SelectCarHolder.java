@@ -4,7 +4,15 @@ import android.widget.TextView;
 
 public class SelectCarHolder {
 
-    TextView plateNumber, price, milage, manufacture, model, carSeat;
+    TextView plateNumber, price, milage, manufacture, model, carSeat, fuelType;
+
+    public TextView getFuelType() {
+        return fuelType;
+    }
+
+    public void setFuelType(TextView fuelType) {
+        this.fuelType = fuelType;
+    }
 
     public TextView getPlateNumber() {
         return plateNumber;
@@ -55,12 +63,13 @@ public class SelectCarHolder {
     }
 
     public SelectCarHolder(TextView plateNumber, TextView price,
-                           TextView milage, TextView manufacture, TextView model, TextView carSeat) {
+                           TextView milage, TextView manufacture, TextView model, TextView carSeat, TextView fuelType) {
         this.plateNumber = plateNumber;
         this.price = price;
         this.milage = milage;
         this.manufacture = manufacture;
         this.model = model;
         this.carSeat = carSeat;
+        this.fuelType =fuelType;
     }
 }
