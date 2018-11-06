@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.widget.Toast;
 
 import com.example.isaac.cfcarrental.Adapters.SelectCarAdapter;
 import com.example.isaac.cfcarrental.Adapters.SelectCarHolder;
@@ -12,7 +13,7 @@ import com.google.firebase.database.DatabaseReference;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ChooseCarActivity extends AppCompatActivity {
+public class ChooseCarActivity extends AppCompatActivity implements SelectCarAdapter.OnItemClickListener{
 
     private List<SelectCarHolder> namesFD;
     private DatabaseReference clientNameDB;
@@ -60,8 +61,15 @@ public class ChooseCarActivity extends AppCompatActivity {
 
         mRecyclerView.setAdapter(mAdapter);
 
+        mAdapter.setOnItemClickListener(ChooseCarActivity.this);
 
 
 
+
+    }
+
+    @Override
+    public void onItemClick(int position) {
+        Toast.makeText(this, "Click at Position"+ position, Toast.LENGTH_SHORT).show();
     }
 }
