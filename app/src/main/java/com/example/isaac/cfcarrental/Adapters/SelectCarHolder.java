@@ -1,69 +1,67 @@
 package com.example.isaac.cfcarrental.Adapters;
 
-import android.widget.TextView;
-
 public class SelectCarHolder {
 
-    TextView plateNumber, price, milage, manufacture, model, carSeat, fuelType;
+    String plateNumber, price, milage, manufacture, model, carSeat, fuelType;
 
-    public TextView getFuelType() {
+    public String getFuelType() {
         return fuelType;
     }
 
-    public void setFuelType(TextView fuelType) {
+    public void setFuelType(String fuelType) {
         this.fuelType = fuelType;
     }
 
-    public TextView getPlateNumber() {
+    public String getPlateNumber() {
         return plateNumber;
     }
 
-    public void setPlateNumber(TextView plateNumber) {
+    public void setPlateNumber(String plateNumber) {
         this.plateNumber = plateNumber;
     }
 
-    public TextView getPrice() {
+    public String getPrice() {
         return price;
     }
 
-    public void setPrice(TextView price) {
+    public void setPrice(String price) {
         this.price = price;
     }
 
-    public TextView getMilage() {
+    public String getMilage() {
         return milage;
     }
 
-    public void setMilage(TextView milage) {
+    public void setMilage(String milage) {
         this.milage = milage;
     }
 
-    public TextView getManufacture() {
+    public String getManufacture() {
         return manufacture;
     }
 
-    public void setManufacture(TextView manufacture) {
+    public void setManufacture(String manufacture) {
         this.manufacture = manufacture;
     }
 
-    public TextView getModel() {
+    public String getModel() {
         return model;
     }
 
-    public void setModel(TextView model) {
+    public void setModel(String model) {
         this.model = model;
     }
 
-    public TextView getCarSeat() {
+    public String getCarSeat() {
         return carSeat;
     }
 
-    public void setCarSeat(TextView carSeat) {
+    public void setCarSeat(String carSeat) {
         this.carSeat = carSeat;
     }
 
-    public SelectCarHolder(TextView plateNumber, TextView price,
-                           TextView milage, TextView manufacture, TextView model, TextView carSeat, TextView fuelType) {
+    public SelectCarHolder(String plateNumber, String price,
+                           String milage, String manufacture, String model, String carSeat, String fuelType) {
         this.plateNumber = plateNumber;
         this.price = price;
         this.milage = milage;
