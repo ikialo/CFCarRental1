@@ -5,12 +5,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="horizontal"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <ImageView
-        android:scaleType="fitXY"
         android:id="@+id/imageView2"
-        android:layout_width="146dp"
+        android:layout_width="174dp"
         android:layout_height="138dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="8dp"
@@ -19,143 +18,50 @@
 
 
     <LinearLayout
-        android:layout_width="200dp"
+        android:layout_width="100dp"
         android:orientation="vertical"
         android:layout_height="wrap_content">
 
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Price"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:layout_marginTop="10dp"
-            android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/plateNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Plate Number"/>
+        <TextView
+            android:id="@+id/mileage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mileage"/>
+        <TextView
+            android:id="@+id/manufacturer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manufacturers"/>
+        <TextView
+            android:id="@+id/model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Model"/>
+        <TextView
+            android:id="@+id/carSeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Car Seats"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="17sp"
-                android:text="Price:"/>
-            <TextView
-                android:layout_marginStart="10dp"
-                android:id="@+id/price"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="17sp"
-                android:paddingStart="5dp"
-                android:background="@drawable/backwhite"
-                android:text="Price"/>
-        </LinearLayout>
-
-
-
-        <LinearLayout
-
-            android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="17sp"
-                android:text="Plate_No:"/>
-            <TextView
-                android:id="@+id/plateNumber"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="17sp"
-                android:layout_marginStart="5dp"
-                android:text="Plate_No"/>
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="17sp"
-                android:text="Mileage:"/>
-            <TextView
-                android:id="@+id/mileage"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:layout_marginStart="5dp"
-                android:text="Mileage"/>
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:layout_height="match_parent">
-
-            <TextView
-
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="Model:"
-                android:textSize="17sp" />
-            <TextView
-                android:id="@+id/model"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="17dp"
-                android:layout_marginStart="6dp"
-                android:text="Model"/>
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:layout_height="match_parent">
-
-
-            <TextView
-                    android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="17dp"
-                android:text="Car Seats:"/>
-            <TextView
-                android:id="@+id/carSeat"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="17dp"
-                android:layout_marginStart="5dp"
-                android:text="Car Seats"/>
-
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:layout_height="match_parent">
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="17sp"
-                android:text="Fuel Type:"/>
-            <TextView
+        <TextView
             android:id="@+id/fuelType"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="17sp"
-                android:layout_marginStart="10dp"
             android:text="Fuel Type"/>
-
-        </LinearLayout>
-
-
-
-
-
 
     </LinearLayout>
 </LinearLayout>
